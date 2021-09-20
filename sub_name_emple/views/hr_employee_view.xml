@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <!-- Inherit Form View to Modify it -->
+        <record id="view_employee_form_sub_name_empl" model="ir.ui.view">
+            <field name="name">hr.employee.form.sub_name_empl</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <field name="mobile_phone" position="before">
+                    <field name="sub_name_empl"/>
+                </field>
+
+
+            </field>
+        </record>
+
+
+    </data>
+</odoo>
